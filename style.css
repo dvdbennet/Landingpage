@@ -91,6 +91,10 @@ section {
   margin-top: 0;
   padding: 0;
   padding-bottom: 3rem;
+  background-image: url('images/TEXTURA dark1.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
 }
 .first-section p {
   font-size: 1.4rem;
@@ -269,3 +273,10 @@ html {
   padding: 0 1.5rem;
   font-size: 1.25rem;
 }
+header {
+  background-image: url('images/TEXTURA dark1.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;    
+}
+  
