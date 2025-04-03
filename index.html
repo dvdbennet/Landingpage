@@ -10,6 +10,24 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-MPTPJZQM');</script>
   <!-- End Google Tag Manager -->
+   <!-- Event snippet for Contato conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-16912465341/hvU8CPjzrrIaEL37voA_',
+        'value': 1.0,
+        'currency': 'BRL',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
     <link rel="stylesheet" href="style.css" />
     <title>Psicóloga Laura Porto</title>
     <link rel="icon" type="image/png" href="images/favicon-32x32.png">
@@ -171,7 +189,11 @@
               <div class="faq-answer">
                 <p>Sim, a terapia online é igualmente eficaz a presencial. Utilizamos plataformas seguras e de fácil acesso para garantir um ambiente terapêutico confortável e confidencial. Muitas pessoas encontram na terapia online a conveniência e a flexibilidade que precisam, sem comprometer a qualidade do atendimento. O processo de acompanhamento e as abordagens terapêuticas são as mesmas, com a vantagem de poder realizar as sessões no conforto de sua casa.</p>
               </div>
-             
+              <div class="faq-item">
+                <button class="faq-question">Como funciona a primeira sessão?</button>
+                <div class="faq-answer">
+                  <p>Ao longo da primeira sessão, é realizada uma entrevista clínica, a qual busca coletar alguns dados como: Dados pessoais (nome, idade, sexo), dados biográficos, o que motivou a busca pelo processo psicoterapêutico, objetivos e metas do cliente perante à psicoterapia, possíveis acompanahamentos anteriores, e por fim, a apresentação do contrato terapêutico. Este contrato visa esclarecer informações sobre como funcionará o pagamento e as regras relacionadas à desmarcação de sessão.</p>
+                </div>
                    
       </div>
     </section>
