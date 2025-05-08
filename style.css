@@ -279,3 +279,13 @@ header {
   background-position: center; 
   background-repeat: no-repeat;    
 }
+.footer-legal-link {
+  color: #a9d3c5;
+  font-size: 1rem;
+  text-decoration: underline;
+  margin-right: 1rem;
+}
+
+.footer-legal-link:hover {
+  color: #00ffd2;
+}
