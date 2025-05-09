@@ -75,13 +75,13 @@ section {
   height: 100%;
   display: block;
 }
-.nav-links {
+a {
   text-decoration: none;
+  transition: 0.4s;
   color: var(--white);
 }
-.nav-links:hover {
+a:hover {
   color: var(--cyan1);
-  transition: 0.4s;
 }
 .first-section {
   display: flex;
@@ -91,10 +91,10 @@ section {
   margin-top: 0;
   padding: 0;
   padding-bottom: 3rem;
-  background-image: url('images/TEXTURA dark1.jpg');
+  background-image: url("images/TEXTURA dark1.jpg");
   background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .first-section p {
   font-size: 1.4rem;
@@ -153,48 +153,6 @@ section {
   flex: 1 1 0;
 }
 
-footer {
-  background-color: var(--dark2);
-}
-
-.footer {
-  padding: 2rem;
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-links {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.footer-links a {
-  color: var(--white);
-}
-
-.footer-links a:hover {
-  color: var(--cyan1);
-}
-
-.abobra {
-  background: var(--strgcolor1);
-  color: var(--dark2);
-  border-radius: 100px;
-  box-shadow: 0 0 10px var(--strgcolor1);
-  border: 1px solid #34898d;
-  padding: 0.5rem 1rem;
-  font-weight: bolder;
-  font-size: 1.5rem;
-}
-
-.abobra:hover {
-  color: inherit;
-}
 html {
   scroll-behavior: smooth;
 }
@@ -274,18 +232,68 @@ html {
   font-size: 1.25rem;
 }
 header {
-  background-image: url('images/TEXTURA dark1.jpg');
+  background-image: url("images/TEXTURA dark1.jpg");
   background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat;    
-}
-.footer-legal-link {
-  color: #a9d3c5;
-  font-size: 1rem;
-  text-decoration: underline;
-  margin-right: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.footer-legal-link:hover {
-  color: #00ffd2;
+footer {
+  background-color: var(--dark2);
+}
+
+.footer {
+  padding: 2rem;
+  display: grid;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  grid-template-areas: "cta" "info" "social" "privacy";
+
+  @media (min-width: 760px) {
+    grid-template-areas:
+      "cta info social"
+      ". privacy .";
+  }
+}
+
+.footer > * {
+  place-self: center;
+}
+
+.footer .footer-cta {
+  grid-area: cta;
+  background: var(--strgcolor1);
+  color: var(--dark2);
+  border-radius: 100px;
+  box-shadow: 0 0 10px var(--strgcolor1);
+  border: 1px solid #34898d;
+  padding: 0.5rem 1rem;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer-info {
+  grid-area: info;
+}
+
+.footer a {
+  text-decoration: underline;
+}
+
+.footer-links {
+  grid-area: privacy;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.social-icons {
+  grid-area: social;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  gap: 1rem;
 }

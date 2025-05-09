@@ -3,49 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MPTPJZQM');</script>
-  <!-- End Google Tag Manager -->
-   <!-- Event snippet for Contato conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-  function gtag_report_conversion(url) {
-    var callback = function () {
-      if (typeof(url) != 'undefined') {
-        window.location = url;
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MPTPJZQM");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Event snippet for Contato conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-16912465341/hvU8CPjzrrIaEL37voA_",
+          value: 1.0,
+          currency: "BRL",
+          event_callback: callback,
+        });
+        return false;
       }
-    };
-    gtag('event', 'conversion', {
-        'send_to': 'AW-16912465341/hvU8CPjzrrIaEL37voA_',
-        'value': 1.0,
-        'currency': 'BRL',
-        'event_callback': callback
-    });
-    return false;
-  }
-  </script>
+    </script>
+
     <link rel="stylesheet" href="style.css" />
     <title>Psicóloga Laura Porto</title>
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" />
+
     <!-- Google Ads Tracking -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16912465341"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-16912465341');
-</script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16912465341"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-16912465341");
+    </script>
   </head>
   <body>
-   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPTPJZQM"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MPTPJZQM"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header>
       <div class="container">
         <div class="header">
@@ -58,24 +80,25 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             <a href="#Quemsoueu" class="nav-links">Quem sou eu</a>
             <a href="#Sobremeutrabalho" class="nav-links">Sobre meu trabalho</a>
             <a href="#Contato" class="nav-links">Contato</a>
-            <a href="#Perguntas" class="nav-links">Perguntas</a>  
+            <a href="#Perguntas" class="nav-links">Perguntas</a>
             <a
-            href="https://wa.me/5561999914224?text=Olá,%20quero%20marcar%20uma%20consulta.%20Quais%20são%20as%20disponibilidade%20de%20horários?"
-            class="nav-links"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="currentColor"
-              class="bi bi-whatsapp"
-              viewBox="0 0 16 16"
+              href="https://wa.me/5561999914224?text=Olá,%20quero%20marcar%20uma%20consulta.%20Quais%20são%20as%20disponibilidade%20de%20horários?"
+              class="nav-links"
+              aria-label="WhatsApp"
             >
-              <path
-                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
-              />
-            </svg>
-          </a>          
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-whatsapp"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                />
+              </svg>
+            </a>
           </nav>
         </div>
       </div>
@@ -93,9 +116,20 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 
               <p>
                 Sou <strong>Psicóloga Clínica</strong>, formada pelo
-                <strong>UniCEUB</strong> e pós-graduanda pelo <strong> Instituto Brasiliense de Análise do Comportamento (IBAC)</strong>. Ofereço atendimentos online para adultos e adolescentes, com o objetivo de proporcionar um espaço acolhedor e seguro para que você possa enfrentar desafios emocionais, buscar <strong>autoconhecimento</strong> e promover seu <strong>bem-estar</strong>.
-               </p>
-              <p>Agende sua consulta e inicie o seu processo de transformação.</p>
+                <strong>UniCEUB</strong> e pós-graduanda pelo
+                <strong>
+                  Instituto Brasiliense de Análise do Comportamento
+                  (IBAC)</strong
+                >. Ofereço atendimentos online para adultos e adolescentes, com
+                o objetivo de proporcionar um espaço acolhedor e seguro para que
+                você possa enfrentar desafios emocionais, buscar
+                <strong>autoconhecimento</strong> e promover seu
+                <strong>bem-estar</strong>.
+              </p>
+              <p>
+                Agende sua consulta e inicie o seu processo de transformação.
+              </p>
+              <p>
                 <a
                   class="cta"
                   href="https://wa.me/5561999914224?text=Olá,%20quero%20marcar%20uma%20consulta.%20Quais%20são%20as%20disponibilidade%20de%20horários?"
@@ -118,104 +152,283 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         <div class="container">
           <div class="max-60">
             <h2 class="title">Quem sou eu?</h2>
-            <p>Sou <strong>Psicóloga Clínica</strong>, nascida e criada em Brasília, cidade onde estudei desde criança. Atualmente sou <strong>pós-graduanda em Análise do Comportamento</strong>, uma abordagem que escolhi por sua base sólida de evidências científicas e eficácia no tratamento de questões emocionais e comportamentais. Acredito que essa abordagem oferece um serviço sério e competente, promovendo mudanças reais na vida das pessoas.</p>
-            <p>Minha escolha de trabalhar com o <strong>público adulto e adolescente</strong> surge do desejo de ajudar a superar os desafios únicos dessas fases da vida, como a busca pela <strong> identidade</strong>, o <strong> autoconhecimento</strong>, os <strong> relacionamentos</strong>, entre outros. </p>
-            <p>Embora atue como psicóloga clínica, sou uma entusiasta da leitura neurocientífica e estou sempre em busca de novos conhecimentos para aprimorar meu trabalho. Prezo pela ciência e estou constantemente me atualizando para garantir que o atendimento que ofereço seja <strong> fundamentado nas melhores práticas e evidências da psicologia</strong>. Meu objetivo é proporcionar um espaço para que meus pacientes desenvolvam estratégias eficazes para <strong>viver de forma mais equilibrada e satisfatória</strong>.</p>
-            <p>Durante minha graduação, aprofundei meus conhecimentos participando de congressos como a <strong>Jornada 3ª Edição - Neuropsicologia (2023)</strong> e o <strong>IBAP (2023)</strong>, além de apresentar um painel na <strong>Sociedade Brasileira de Psicologia (2023)</strong> sobre dependência emocional e dados sociodemográficos.</p>
-            <p>Busco constantemente expandir meus conhecimentos por meio de cursos, como Práticas Baseadas em Evidências, ACT (Terapia de Aceitação e Compromisso) e a história das terapias comportamentais, para garantir um tratamento atualizado e fundamentado nas melhores práticas da psicologia. Com experiência no atendimento clínico de crianças de 2 a 12 anos e atuação na Psicologia Jurídica no MPDFT, desenvolvi habilidades para atender diferentes faixas etárias e contextos. </p>
-            <p><strong>Meu objetivo é promover qualidade de vida e bem-estar por meio de práticas terapêuticas eficazes, focadas em resultados concretos e sustentáveis.</strong></p>
-      </div>
+            <p>
+              Sou <strong>Psicóloga Clínica</strong>, nascida e criada em
+              Brasília, cidade onde estudei desde criança. Atualmente sou
+              <strong>pós-graduanda em Análise do Comportamento</strong>, uma
+              abordagem que escolhi por sua base sólida de evidências
+              científicas e eficácia no tratamento de questões emocionais e
+              comportamentais. Acredito que essa abordagem oferece um serviço
+              sério e competente, promovendo mudanças reais na vida das pessoas.
+            </p>
+            <p>
+              Minha escolha de trabalhar com o
+              <strong>público adulto e adolescente</strong> surge do desejo de
+              ajudar a superar os desafios únicos dessas fases da vida, como a
+              busca pela <strong> identidade</strong>, o
+              <strong> autoconhecimento</strong>, os
+              <strong> relacionamentos</strong>, entre outros.
+            </p>
+            <p>
+              Embora atue como psicóloga clínica, sou uma entusiasta da leitura
+              neurocientífica e estou sempre em busca de novos conhecimentos
+              para aprimorar meu trabalho. Prezo pela ciência e estou
+              constantemente me atualizando para garantir que o atendimento que
+              ofereço seja
+              <strong>
+                fundamentado nas melhores práticas e evidências da
+                psicologia</strong
+              >. Meu objetivo é proporcionar um espaço para que meus pacientes
+              desenvolvam estratégias eficazes para
+              <strong>viver de forma mais equilibrada e satisfatória</strong>.
+            </p>
+            <p>
+              Durante minha graduação, aprofundei meus conhecimentos
+              participando de congressos como a
+              <strong>Jornada 3ª Edição - Neuropsicologia (2023)</strong> e o
+              <strong>IBAP (2023)</strong>, além de apresentar um painel na
+              <strong>Sociedade Brasileira de Psicologia (2023)</strong> sobre
+              dependência emocional e dados sociodemográficos.
+            </p>
+            <p>
+              Busco constantemente expandir meus conhecimentos por meio de
+              cursos, como Práticas Baseadas em Evidências, ACT (Terapia de
+              Aceitação e Compromisso) e a história das terapias
+              comportamentais, para garantir um tratamento atualizado e
+              fundamentado nas melhores práticas da psicologia. Com experiência
+              no atendimento clínico de crianças de 2 a 12 anos e atuação na
+              Psicologia Jurídica no MPDFT, desenvolvi habilidades para atender
+              diferentes faixas etárias e contextos.
+            </p>
+            <p>
+              <strong
+                >Meu objetivo é promover qualidade de vida e bem-estar por meio
+                de práticas terapêuticas eficazes, focadas em resultados
+                concretos e sustentáveis.</strong
+              >
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="Sobremeutrabalho" class="third-section">
         <div class="container">
           <h2>Sobre o meu Trabalho</h2>
           <div class="horizontal">
-            <img class="img-desenho" src="images/WhatsApp Image 2025-02-27 at 15.58.49.jpeg" alt="" />
+            <img
+              class="img-desenho"
+              src="images/WhatsApp Image 2025-02-27 at 15.58.49.jpeg"
+              alt=""
+            />
             <div class="content">
-             <p>Atuo com <strong>adolescentes</strong> e <strong>adultos</strong>, oferecendo atendimentos online que permitem uma conexão terapêutica de <strong>qualidade</strong>, independentemente da sua localização, proporcionando um atendimento <strong>personalizado</strong> e <strong>eficaz</strong>. A terapia online tem se mostrado tão eficaz quanto a presencial, oferecendo conveniência e acessibilidade, além de permitir que você tenha o <strong>apoio que precisa no conforto do seu espaço</strong>.   
-             </p>
-            <p>Meu compromisso é proporcionar um ambiente <strong>acolhedor</strong> e <strong>seguro</strong>, onde você possa se sentir à vontade para explorar suas questões emocionais e comportamentais. Juntos, vamos trabalhar no seu <strong>autoconhecimento</strong> e no <strong>desenvolvimento pessoal</strong>, para que você alcance seus objetivos e possa viver com mais <strong>equilíbrio</strong> e <strong>bem-estar</strong>.
-            </p>
-             <p>Se você está buscando transformação pessoal, <strong>estou aqui para ajudar</strong>! Vamos trilhar esse caminho de forma cuidadosa, respeitosa e com o objetivo de proporcionar uma <strong>mudança duradoura e significativa na sua vida</strong>. Estou comprometida com seu crescimento pessoal e em lhe proporcionar um ambiente onde você se sinta totalmente à vontade.</p>
+              <p>
+                Atuo com <strong>adolescentes</strong> e
+                <strong>adultos</strong>, oferecendo atendimentos online que
+                permitem uma conexão terapêutica de <strong>qualidade</strong>,
+                independentemente da sua localização, proporcionando um
+                atendimento <strong>personalizado</strong> e
+                <strong>eficaz</strong>. A terapia online tem se mostrado tão
+                eficaz quanto a presencial, oferecendo conveniência e
+                acessibilidade, além de permitir que você tenha o
+                <strong>apoio que precisa no conforto do seu espaço</strong>.
+              </p>
+              <p>
+                Meu compromisso é proporcionar um ambiente
+                <strong>acolhedor</strong> e <strong>seguro</strong>, onde você
+                possa se sentir à vontade para explorar suas questões emocionais
+                e comportamentais. Juntos, vamos trabalhar no seu
+                <strong>autoconhecimento</strong> e no
+                <strong>desenvolvimento pessoal</strong>, para que você alcance
+                seus objetivos e possa viver com mais
+                <strong>equilíbrio</strong> e <strong>bem-estar</strong>.
+              </p>
+              <p>
+                Se você está buscando transformação pessoal,
+                <strong>estou aqui para ajudar</strong>! Vamos trilhar esse
+                caminho de forma cuidadosa, respeitosa e com o objetivo de
+                proporcionar uma
+                <strong>mudança duradoura e significativa na sua vida</strong>.
+                Estou comprometida com seu crescimento pessoal e em lhe
+                proporcionar um ambiente onde você se sinta totalmente à
+                vontade.
+              </p>
             </div>
           </div>
         </div>
       </section>
-    <section id="Perguntas" class="container">
-      <h2>Perguntas Frequentes</h2>
-      <div class="faq-section">
-        <div class="faq-item">
-          <button class="faq-question">Como posso marcar uma consulta?</button>
-          <div class="faq-answer">
-            <p>Você pode agendar uma consulta diretamente através do nosso site, clicando no botão de <br>"AGENDE SUA CONSULTA JÁ". <br>Também vai encontrar todas as minhas redes na seção de "contato", no rodapé da página. <br> Estarei à disposição para ajudar no processo de agendamento e esclarecer qualquer dúvida.</p>
+
+      <section id="Perguntas" class="container">
+        <h2>Perguntas Frequentes</h2>
+
+        <div class="faq-section">
+          <div class="faq-item">
+            <button class="faq-question">
+              Como posso marcar uma consulta?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Você pode agendar uma consulta diretamente através do nosso
+                site, clicando no botão de <br />"AGENDE SUA CONSULTA JÁ".
+                <br />Também vai encontrar todas as minhas redes na seção de
+                "contato", no rodapé da página. <br />
+                Estarei à disposição para ajudar no processo de agendamento e
+                esclarecer qualquer dúvida.
+              </p>
+            </div>
           </div>
-        <div class="faq-item">
-          <button class="faq-question">Você aceita convênios para pagamento das consultas?</button>
-          <div class="faq-answer">
-            <p>No momento, não aceitamos convênios para o pagamento das consultas. O atendimento é realizado de forma particular. Se você tiver dúvidas sobre formas de pagamento ou valores, fique à vontade para entrar em contato para mais informações.</p>
+          <div class="faq-item">
+            <button class="faq-question">
+              Você aceita convênios para pagamento das consultas?
+            </button>
+            <div class="faq-answer">
+              <p>
+                No momento, não aceitamos convênios para o pagamento das
+                consultas. O atendimento é realizado de forma particular. Se
+                você tiver dúvidas sobre formas de pagamento ou valores, fique à
+                vontade para entrar em contato para mais informações.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">O que acontece se eu precisar de uma nota fiscal para reembolso do convênio?</button>
-          <div class="faq-answer">
-            <p>Embora não aceitemos convênios diretamente, podemos emitir uma nota fiscal para que você possa tentar o reembolso junto ao seu convênio, caso ele permita esse tipo de procedimento. Recomendamos que consulte com o seu convênio sobre as possibilidades de reembolso para consultas psicológicas.</p>
+          <div class="faq-item">
+            <button class="faq-question">
+              O que acontece se eu precisar de uma nota fiscal para reembolso do
+              convênio?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Embora não aceitemos convênios diretamente, podemos emitir uma
+                nota fiscal para que você possa tentar o reembolso junto ao seu
+                convênio, caso ele permita esse tipo de procedimento.
+                Recomendamos que consulte com o seu convênio sobre as
+                possibilidades de reembolso para consultas psicológicas.
+              </p>
+            </div>
           </div>
-        </div>
-         <div class="faq-item">
-          <button class="faq-question">Com que frequência as sessões de terapia são realizadas?</button>
-          <div class="faq-answer">
-            <p>As sessões de terapia acontecem uma vez por semana, com duração de cerca de 50 minutos.</p>
+          <div class="faq-item">
+            <button class="faq-question">
+              Com que frequência as sessões de terapia são realizadas?
+            </button>
+            <div class="faq-answer">
+              <p>
+                As sessões de terapia acontecem uma vez por semana, com duração
+                de cerca de 50 minutos.
+              </p>
+            </div>
           </div>
           <div class="faq-item">
             <button class="faq-question">A terapia é confidencial?</button>
             <div class="faq-answer">
-              <p>Sim, a terapia é confidencial.  A Lei do Sigilo na Psicologia é um princípio fundamental que assegura a confidencialidade das informações compartilhadas pelo paciente durante o atendimento psicológico. No Brasil, o Código de Ética Profissional do Psicólogo (Resolução CFP nº 010/2005) estabelece que o psicólogo deve manter o sigilo sobre tudo o que for tratado nas sessões, exceto em situações específicas previstas por lei, como:</p>
-              <p>1. Risco iminente de morte ou de danos graves ao paciente ou a terceiros.  </p>
-              <p>2. ⁠Casos em que o paciente autorize expressamente a quebra de sigilo.</p>
-              <p>3. ⁠Exigência legal ou judicial, como no caso de investigação criminal.</p>
-              <p>Esse sigilo é crucial para criar um ambiente de confiança, permitindo que o paciente se sinta seguro para compartilhar suas emoções, pensamentos e experiências pessoais. Ao garantir a confidencialidade, o psicólogo proporciona um espaço livre de julgamentos, essencial para que o processo terapêutico seja eficaz e ético.</p>
-             <p>Portanto, o sigilo profissional não é apenas uma obrigação legal, mas uma parte essencial do respeito e cuidado oferecidos na prática psicológica.</p>
+              <p>
+                Sim, a terapia é confidencial. A Lei do Sigilo na Psicologia é
+                um princípio fundamental que assegura a confidencialidade das
+                informações compartilhadas pelo paciente durante o atendimento
+                psicológico. No Brasil, o Código de Ética Profissional do
+                Psicólogo (Resolução CFP nº 010/2005) estabelece que o psicólogo
+                deve manter o sigilo sobre tudo o que for tratado nas sessões,
+                exceto em situações específicas previstas por lei, como:
+              </p>
+              <p>
+                1. Risco iminente de morte ou de danos graves ao paciente ou a
+                terceiros.
+              </p>
+              <p>
+                2. ⁠Casos em que o paciente autorize expressamente a quebra de
+                sigilo.
+              </p>
+              <p>
+                3. ⁠Exigência legal ou judicial, como no caso de investigação
+                criminal.
+              </p>
+              <p>
+                Esse sigilo é crucial para criar um ambiente de confiança,
+                permitindo que o paciente se sinta seguro para compartilhar suas
+                emoções, pensamentos e experiências pessoais. Ao garantir a
+                confidencialidade, o psicólogo proporciona um espaço livre de
+                julgamentos, essencial para que o processo terapêutico seja
+                eficaz e ético.
+              </p>
+              <p>
+                Portanto, o sigilo profissional não é apenas uma obrigação
+                legal, mas uma parte essencial do respeito e cuidado oferecidos
+                na prática psicológica.
+              </p>
             </div>
-        <!-- Adicione mais itens conforme necessário -->
-        <div class="faq-item">
-          <button class="faq-question">Eu preciso de uma indicação médica para começar a terapia?</button>
-          <div class="faq-answer">
-            <p>Não, você não precisa de uma recomendação médica para começar a terapia. Se você sente que precisa de suporte emocional, pode procurar um psicólogo diretamente. Caso seja necessário, durante o processo, o psicólogo pode sugerir que você consulte um médico ou outro profissional de saúde.</p>
           </div>
-         
-            <div class="faq-item">
-              <button class="faq-question">A terapia online é eficaz?</button>
-              <div class="faq-answer">
-                <p>Sim, a terapia online é igualmente eficaz a presencial. Utilizamos plataformas seguras e de fácil acesso para garantir um ambiente terapêutico confortável e confidencial. Muitas pessoas encontram na terapia online a conveniência e a flexibilidade que precisam, sem comprometer a qualidade do atendimento. O processo de acompanhamento e as abordagens terapêuticas são as mesmas, com a vantagem de poder realizar as sessões no conforto de sua casa.</p>
-              </div>
-              <div class="faq-item">
-                <button class="faq-question">Como funciona a primeira sessão?</button>
-                <div class="faq-answer">
-                  <p>Ao longo da primeira sessão, é realizada uma entrevista clínica, a qual busca coletar alguns dados como: Dados pessoais (nome, idade, sexo), dados biográficos, o que motivou a busca pelo processo psicoterapêutico, objetivos e metas do cliente perante à psicoterapia, possíveis acompanahamentos anteriores, e por fim, a apresentação do contrato terapêutico. Este contrato visa esclarecer informações sobre como funcionará o pagamento e as regras relacionadas à desmarcação de sessão.</p>
-                </div>
-                   
-      </div>
-    </section>
-  </main>
+          <div class="faq-item">
+            <button class="faq-question">
+              Eu preciso de uma indicação médica para começar a terapia?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Não, você não precisa de uma recomendação médica para começar a
+                terapia. Se você sente que precisa de suporte emocional, pode
+                procurar um psicólogo diretamente. Caso seja necessário, durante
+                o processo, o psicólogo pode sugerir que você consulte um médico
+                ou outro profissional de saúde.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">A terapia online é eficaz?</button>
+            <div class="faq-answer">
+              <p>
+                Sim, a terapia online é igualmente eficaz a presencial.
+                Utilizamos plataformas seguras e de fácil acesso para garantir
+                um ambiente terapêutico confortável e confidencial. Muitas
+                pessoas encontram na terapia online a conveniência e a
+                flexibilidade que precisam, sem comprometer a qualidade do
+                atendimento. O processo de acompanhamento e as abordagens
+                terapêuticas são as mesmas, com a vantagem de poder realizar as
+                sessões no conforto de sua casa.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              Como funciona a primeira sessão?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Ao longo da primeira sessão, é realizada uma entrevista clínica,
+                a qual busca coletar alguns dados como: Dados pessoais (nome,
+                idade, sexo), dados biográficos, o que motivou a busca pelo
+                processo psicoterapêutico, objetivos e metas do cliente perante
+                à psicoterapia, possíveis acompanahamentos anteriores, e por
+                fim, a apresentação do contrato terapêutico. Este contrato visa
+                esclarecer informações sobre como funcionará o pagamento e as
+                regras relacionadas à desmarcação de sessão.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer id="Contato">
       <div class="container">
         <div class="footer">
           <a
             href="https://wa.me/5561999914224?text=Olá,%20quero%20marcar%20uma%20consulta.%20Quais%20são%20as%20disponibilidade%20de%20horários?"
             target="_blank"
-            class="nav-links abobra"
+            class="footer-cta"
             >Marcar consulta</a
           >
-          <p>
+          <p class="footer-info">
             Psicóloga Clínica<br />
             Laura Porto Baião<br />
             CRP: 01/28432
           </p>
           <div class="footer-links">
-            <a href="politica.html" class="footer-legal-link">Política de Privacidade</a>
-            <a href="termos-de-uso.html" class="footer-legal-link">Termos de Uso</a>
+            <a href="politica.html" class="footer-legal-link"
+              >Política de Privacidade</a
+            >
+            <a href="termos-de-uso.html" class="footer-legal-link"
+              >Termos de Uso</a
+            >
           </div>
+          <div class="social-icons">
+            <!-- Instagram -->
             <a
               href="https://www.instagram.com/lauraportobp/"
               title="Instagram"
@@ -235,6 +448,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               </svg>
             </a>
 
+            <!-- Linkedin -->
             <a
               href="https://www.linkedin.com/in/laura-porto-50b062227/"
               title="Linkedin"
@@ -254,6 +468,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
               </svg>
             </a>
 
+            <!-- Whatsapp -->
             <a
               href="https://wa.me/5561999914224?text=Olá,%20quero%20marcar%20uma%20consulta.%20Quais%20são%20as%20disponibilidade%20de%20horários?"
             >
@@ -273,7 +488,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </div>
         </div>
       </div>
-    </footer> 
+    </footer>
+
+    <script src="main.js"></script>
   </body>
-  <script src="main.js"></script>
 </html>
